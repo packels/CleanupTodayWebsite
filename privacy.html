@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Privacy Policy — Cleanup Today</title>
+    <title>Privacy Policy - Cleanup Today</title>
     <style>
       * {
         margin: 0;
@@ -57,7 +57,7 @@
         text-align: center;
         font-size: 0.95rem;
       }
-      footer {
+      .footer {
         margin-top: 60px;
         text-align: center;
         font-size: 0.85rem;
@@ -68,21 +68,24 @@
   <body>
     <div class="container">
       <h1>Privacy Policy</h1>
-      <p class="subtitle">Cleanup Today — Effective March 15, 2026</p>
+      <p class="subtitle">Cleanup Today - Effective April 5, 2026</p>
 
       <h2>Overview</h2>
       <p>
-        Cleanup Today is a camera roll cleanup app that runs entirely on your
-        device. We do not collect, store, or transmit any personal data. Your
-        privacy is fundamental to how the app is designed.
+        Cleanup Today is a camera roll cleanup app designed to work without
+        developer-run accounts, analytics, advertising, or backend servers.
+        Your photos and videos stay on your device unless you choose to delete
+        them through Apple's photo library APIs. Your privacy is fundamental to
+        how the app is designed.
       </p>
 
       <h2>Data We Do Not Collect</h2>
       <p>
-        Cleanup Today does not collect any personal information. There are no
-        accounts, no analytics, no tracking, no advertising, and no server-side
-        components. We have no way to access your data because it never leaves
-        your device.
+        Cleanup Today does not require an account and does not use third-party
+        analytics, tracking, advertising, or crash reporting SDKs. We do not
+        receive copies of your photos, videos, cleanup history, or payment
+        information, and we do not operate our own servers to collect that
+        data.
       </p>
 
       <h2>Photo Library Access</h2>
@@ -98,28 +101,42 @@
       <p>
         The app can send local notifications to remind you to clean up your
         camera roll. Notification preferences are stored locally on your device
-        using UserDefaults. No notification data is sent to any server.
+        so the app can remember your settings. Notification content is created
+        on-device and is not sent to us.
       </p>
 
       <h2>Purchases</h2>
       <p>
         In-app purchases are handled entirely by Apple through StoreKit. Cleanup
         Today does not process, store, or have access to any payment
-        information. Purchase records are managed by your Apple ID.
+        information. Purchase records and entitlement restoration are managed by
+        your Apple ID and Apple's systems.
       </p>
 
-      <h2>On-Device Storage</h2>
+      <h2>On-Device Storage and iCloud Sync</h2>
       <p>
-        The app stores your progress (completed days, streaks, and statistics)
-        locally on your device using UserDefaults and Keychain. This data is not
-        transmitted anywhere and is used only to display your progress within
-        the app and its Home Screen widget.
+        The app stores progress data such as completed days, streaks, and
+        cleanup statistics locally on your device using system storage such as
+        UserDefaults and Keychain. The app also uses Apple's iCloud key-value
+        storage to sync limited progress data across your devices when that
+        Apple service is available. This sync is handled by Apple. Photos,
+        videos, trial data, and device-specific settings are not included in
+        that iCloud sync.
+      </p>
+
+      <h2>Apple Services</h2>
+      <p>
+        Cleanup Today uses Apple frameworks and services such as PhotoKit,
+        UserNotifications, StoreKit, Keychain, WidgetKit, and iCloud key-value
+        storage to provide core app features. Any information Apple processes
+        to provide those services is governed by Apple's own privacy policies
+        and terms.
       </p>
 
       <h2>Third-Party Services</h2>
       <p>
-        Cleanup Today does not use any third-party SDKs, analytics services,
-        crash reporters, or advertising networks.
+        Cleanup Today does not use non-Apple third-party SDKs, analytics
+        services, crash reporters, or advertising networks.
       </p>
 
       <h2>Children's Privacy</h2>
@@ -137,13 +154,14 @@
       <h2>Contact</h2>
       <p>
         If you have questions about this privacy policy, contact us at
-        <a href="mailto:CleanupTodayApp@gmail.com">CleanupTodayApp@gmail.com</a
-        >.
+        <a href="mailto:CleanupTodayApp@gmail.com">CleanupTodayApp@gmail.com</a>.
+        If you choose to email us, your message and related metadata will be
+        handled by your email provider.
       </p>
 
       <p class="back"><a href="index.html">&larr; Back to Cleanup Today</a></p>
 
-      <footer>&copy; 2026 Paul Ackels. All rights reserved.</footer>
+      <p class="footer">&copy; 2026 Paul Ackels. All rights reserved.</p>
     </div>
   </body>
 </html>
